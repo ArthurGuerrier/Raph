@@ -1,0 +1,439 @@
+body{
+    background: linear-gradient(90deg, #ccc4c4, #4d4545);
+}
+
+.menu{
+    position: fixed;
+    text-align: end;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 4%;
+    background-color: #4d4545;
+    z-index: 100;
+}
+
+.menu-portable{
+    display: none;
+}
+
+.formulaire{
+    text-align: center;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+.nom{
+    background-color: #4d4545;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    color: #ccc4c4;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+.email{
+    background-color: #4d4545;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    color: #ccc4c4;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+.textarea{
+    background-color: #4d4545;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    color: #ccc4c4;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+.textarea:focus,.email:focus,.nom:focus{
+    outline: none;
+}
+
+.bouton{
+    background-color: #4d4545;
+    color: #ccc4c4;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    border-radius: 10px; 
+    margin-top: 30px;
+    transition: background-color 2s ease;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+.bouton:hover{
+    background-color: #ccc4c4;
+    color: #4d4545;
+    cursor: pointer;
+}
+
+p{
+    color: #4d4545;
+    font-weight: 500;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+h1{
+    color: #4d4545;
+    margin-top: 100px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+h2{
+    color: #4d4545;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;  
+}
+
+a{
+    color:#ccc4c4;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 2%;
+}
+
+.menu-ordi{
+    transition: transform 1s ease-in-out;
+    display: inline-block;
+}
+
+.menu-ordi:hover{
+    transform: scale(1.3);
+}
+
+.maison{
+    transition: transform 1s ease-in-out;
+    position: relative;
+    top: 4px;
+    display: inline-block;
+}
+
+.maison:hover{
+    transform: scale(1.3);
+}
+
+.langue-portable{
+    display: none;
+}
+
+.Carte{
+    margin-top: -29%;
+    margin-left: -1%;
+    width: 75%;
+    height: 350px;
+    position: relative;
+    top: 30px;
+    left: 13%;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.contact{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.duree{
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    color: #ccc4c4;
+    font-size: 25px;
+}
+
+.duree-portable{
+    display: none;
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding-top: 50px;
+    color: black;
+}
+
+.img-youtube,.img-facebook,.img-soundcloud,.img-linkedin{
+    padding-right: 30px;
+    padding-top: 5px;
+    height: 3%;
+    width: 3%;
+    transition: filter 2s ease;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.img-youtube:hover,.img-facebook:hover,.img-soundcloud:hover,.img-linkedin:hover{
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.reseaux{
+    width: 100%;
+    background-color: #ccc4c4;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 100;
+}
+
+@media screen and (min-width: 1500px) {
+    .Carte{
+        position: relative;
+        top: 25%;
+        left: 17%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .Carte{
+        position: relative;
+        top: 40%;
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 1919px) and (min-width: 1920px){
+    .Carte{
+        position: relative;
+        top: 50%;
+        left: 12%;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .Carte{
+        position: relative;
+        top:  75%;
+        left: 20%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .img-youtube,.img-facebook,.img-soundcloud,.img-linkedin{
+        height: 5%;
+        width: 5%;
+    }
+    .maison{
+        display: none;
+    }
+    .menu-ordi{
+        display: none;
+    }
+    .contact{
+        display: block;
+    }
+    .Carte{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 75%;
+    }
+    .textarea{
+        width: 75%;
+    }
+    .email{
+        width: 75%;
+    }
+    .nom{
+        width: 75%;
+    }
+    .duree{
+        display: none;
+    }
+    .duree-portable{
+        margin-top: 7%;
+        margin-bottom: -5%;
+        display: block;
+        color: black;
+    }
+    .menu-portable{
+        display: inline-block;
+    }
+    .maison-portable{
+        display: inline-block;
+        height: 35px;
+    }
+    .langue-portable{
+        display: inline-block;
+        position: relative;
+        top: -5px;
+    }
+    .div-carte{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width : 500px) and  (max-width: 900px) {
+    .img-youtube,.img-facebook,.img-soundcloud,.img-linkedin{
+        height: 5%;
+        width: 5%;
+    }
+    .contact{
+        display: block;
+    }
+    .Carte{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 75%;
+    }
+    .textarea{
+        width: 75%;
+    }
+    .email{
+        width: 75%;
+    }
+    .nom{
+        width: 75%;
+    }
+    .duree{
+        display: none;
+    }
+    .duree-portable{
+        margin-top: 7%;
+        margin-bottom: -5%;
+        display: block;
+        color: black;
+    }
+}
+
+@media screen and (min-width : 1390px){
+    .Carte{
+        margin-top: -25%;
+    }
+    .textarea{
+        width: 50%;
+    }
+    .email{
+        width: 50%;
+    }
+    .nom{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Carte{
+        position: relative;
+        left: 13%;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .Carte{
+        position: relative;
+        top: 20%;
+    }
+}
+
+@media screen and (max-width: 1690px) {
+    .Carte{
+        position: relative;
+        top: 40%;
+        left: 12%;
+    }
+}
+
+
+/* Sidenav menu links */
+.sidenav a {
+    padding-top: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    /* Changez cette ligne : */
+    text-align: center;
+    color: #4d4545; /* Texte du menu visible sur le fond #ccc4c4 */
+    display: block;
+    transition: 0.3s;
+}
+    
+
+/* Sidenav menu */
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+     width: 250px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    /* Modifiez cette ligne : */
+    right: -250px; /* Initialement hors de l'écran à droite */
+    /* Supprimez ou commentez cette ligne : */
+    /* left: -250px; */
+    background: linear-gradient(90deg, #ccc4c4, #4d4545);
+    padding-top: 70px;
+    /* Modifiez cette ligne : */
+    transition: right 0.5s ease; /* Transitionne la propriété 'right' */
+}
+.sidenav.active {
+ /* Modifiez cette ligne : */
+ right: 0; /* Glisse pour être visible depuis la droite */
+ /* Supprimez ou commentez cette ligne : */
+ /* left: 0; */
+}
+
+.sidenav ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
